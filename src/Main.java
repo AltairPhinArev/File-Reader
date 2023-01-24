@@ -1,10 +1,5 @@
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.Collections;
-import java.util.List;
 import java.util.Scanner;
-import java.util.ArrayList;
+
 // Поехали!
 public class Main {
     public static void main(String[] args) {
@@ -26,7 +21,6 @@ public class Main {
                 System.out.println("Файл был за год успешно считан");
             } else if (i == 3){
                     if (checkMonButton == true && checkYearButton == true){
-
                         repEn.compareMothToYear();
                     }else{
                         System.out.println("Для сверки отчетов нужно считать сразу два фвйла");

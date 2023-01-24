@@ -7,22 +7,25 @@ import java.util.*;
 public class OneSideOfYear {
     ArrayList<Integer> Expenses = new ArrayList<>();
     ArrayList<Integer> Profit = new ArrayList<>();
-    ArrayList<String> NumMonth = new ArrayList<>();
-    HashMap<String , Integer> ItemByPrice = new HashMap<>();
-
+    ArrayList<Boolean> isExpenses = new ArrayList<>();
+    ArrayList<Boolean> isProfit = new ArrayList<>();
+    ArrayList<Integer> NumMonth = new ArrayList<>();
 
     void strLineYear() {
         List<String> lines = readFileContents("resources/y.2021.csv");
         for (String line : lines) {
             String[] lineContecst = line.split(",");
             if(!lineContecst[0].equals("month")) {
-                NumMonth.add(lineContecst[0]);
+                int numMonth =Integer.parseInt(lineContecst[0]);
                 int amont  = Integer.parseInt(lineContecst[1]);
+                Boolean isExpense = Boolean.parseBoolean(lineContecst[2]);
                 if (lineContecst[2].equals("false")) {
                     Profit.add(amont);
-                    ItemByPrice.put(lineContecst[0] , amont);
+                    NumMonth.add(numMonth);
+                    isProfit.add(isExpense);
                 } else {
                     Expenses.add(amont);
+                    isExpenses.add(isExpense);
                 }
             }
         }
