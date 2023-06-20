@@ -2,6 +2,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.*;
 
+/*
+    @author Andrey Panasiuk
+    Git @AltairPhinArev
+ */
+
 public class MonthlyRepRec {
 
     String itemName;
