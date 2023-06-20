@@ -3,6 +3,11 @@ import java.nio.file.Path;
 import java.util.HashMap;
 import java.util.*;
 
+/*
+    @author Andrey Panasiuk
+    Git @AltairPhinArev
+ */
+
 public class OneSideOfYear {
     ArrayList<Integer> Expenses = new ArrayList<>();
     ArrayList<Integer> Profit = new ArrayList<>();
