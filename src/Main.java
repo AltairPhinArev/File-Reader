@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
-// Поехали!
+/*
+    @author Andrey Panasiuk
+    Git @AltairPhinArev
+ */
+
 public class Main {
     public static void main(String[] args) {
 
