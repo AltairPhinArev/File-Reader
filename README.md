@@ -1,2 +1,2 @@
 # java-sprint2-hw
-Second sprint homework
+Home-Project for accounting of cash)
