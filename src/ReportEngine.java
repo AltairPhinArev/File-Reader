@@ -1,5 +1,10 @@
 import  java.util.ArrayList;
 
+/*
+    @author Andrey Panasiuk
+    Git @AltairPhinArev
+ */
+
 public class ReportEngine {
     OneSideOfMonth oneSideOfMonth = new OneSideOfMonth();
     OneSideOfYear oneSideOfYear = new OneSideOfYear();
